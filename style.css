@@ -1,0 +1,199 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  /* height: 3000Px; */
+  /* background-color: #aaa; */
+  font-family: 'Ropa Sans', sans-serif;
+  position: sticky;
+  background-color: white;
+  color:white;
+}
+header{
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(0,16,17);
+  float: left;
+  transition: 1s;
+  z-index: 2;
+}
+.logo img{
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 70px;
+}
+header:hover {
+  background-color: #bbb;
+  width: 150px;
+
+}
+header:hover a{
+  color:white;
+  background-color: #00A7E1;
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: 5px 5px #111;
+}
+header:hover .img-menu img{
+  display:none;
+}
+
+header::after{
+    clear: both;
+     display: block;
+     content: "";
+
+}
+ul{
+  display: none;
+  transition:1s;
+}
+header:hover ul{
+  display:block;
+}
+main{
+  margin-left: 10%;
+  width: 90%;
+  float: left;
+  height: 100vh;
+
+  background-color: #ddd;
+  text-align: center;
+
+}
+a{
+  text-decoration: none;
+
+  color:#fff;
+  margin-left: 15px;
+  line-height: 50px;
+  font-size: 15px;
+}
+a:hover{
+  font-size: 18px;
+  transition: 1s;
+  color:#00A7E1;
+}
+.img-menu img{
+  margin-top: 30px;
+  margin-left:30px;
+  z-index: 3;
+  width: 30px;
+}
+.img-menu img{
+  margin-top: 30px;
+  margin-left:30px;
+  z-index: 3;
+  width: 30px;
+}
+.vetrina{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(66,75,84);
+  clear: both;
+   display: table;
+   content: "";
+   position: relative;
+}
+.int{
+  line-height: 60px;
+  width: 300px;
+  height:60px;
+  background-color: #00A7E1;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%);
+}
+.titolo{
+
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  color:#00A7E1;
+  margin:0 auto;
+  clear: both;
+   display: table;
+   content: "";
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50% , -50%);
+}
+.biografia{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(205,211,206);
+  clear: both;
+   display: table;
+   content: "";
+   position: relative;
+}
+.lavori{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(66,75,84);
+  clear: both;
+   display: table;
+   content: "";
+   position: relative;
+}
+.contatti{
+
+  height: 100%;
+  width: 100%;
+  background-color: rgb(205,211,206);
+  clear: both;
+   display: table;
+   content: "";
+   position: relative;
+}
+main::after{
+    clear: both;
+     display: table;
+     content: "";
+
+}
+.social{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  bottom:0;
+  right: 0;
+  transition:1s;
+}
+
+.social a img{
+  display:inline-block;
+  opacity: 0;
+  margin-top: 15px;
+  width: 32px;
+  transition: 1.5s;
+  padding: 0 5px;
+}
+img.share {
+
+  margin-top: 10px;
+  width: 32px;
+  opacity:1;
+}
+.social:hover{
+  background-color: rgba(0,0,0,0.7);
+  width: 300px;
+}
+.social:hover img{
+  opacity: 1;
+  transition:2s;
+}
+.social:hover .share{
+  opacity: 0;
+  
+}
